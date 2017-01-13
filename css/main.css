@@ -5,6 +5,8 @@ html, body {
     padding: 0;
 }
 
+/***************************************** NAVBAR ******************************************/
+
 .navbar {
     background-color: #009E9A;
 }
@@ -16,3 +18,5 @@ html, body {
 .navbar-default .navbar-brand,  .navbar-default .navbar-brand:hover {
     color: white;
 }
+
+/***************************************** MAIN ******************************************/
