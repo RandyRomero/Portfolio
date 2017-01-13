@@ -1,0 +1,18 @@
+html {
+    margin: 0;
+}
+html, body {
+    padding: 0;
+}
+
+body, .navbar {
+    background-color: #009E9A;
+}
+
+.navbar {
+    border: none;
+}
+
+.navbar-default .navbar-brand,  .navbar-default .navbar-brand:hover {
+    color: white;
+}
