@@ -5,7 +5,7 @@ html, body {
     padding: 0;
 }
 
-body, .navbar {
+.navbar {
     background-color: #009E9A;
 }
 
