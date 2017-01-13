@@ -6,18 +6,22 @@ html, body {
 }
 
 body {
-    background-color: #468966;
+    background-color: #292E66;
 }
 
 /***************************************** NAVBAR ******************************************/
 
 .navbar {
-    background-color: transparent;
+    background-color: #D9414E;
     border: none;
 }
 
 .navbar-default .navbar-brand,  .navbar-default .navbar-brand:hover {
-    color: white;
+    color: #E5F2FF;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #E5F2FF;
 }
 
 /***************************************** MAIN ******************************************/
