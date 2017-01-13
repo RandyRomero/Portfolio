@@ -20,3 +20,13 @@ html, body {
 }
 
 /***************************************** MAIN ******************************************/
+
+.fixed-bg {
+    background-image: url('../images/bird.jpg');
+	background-size: cover;
+    background-position: center;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: -1;	
+}
