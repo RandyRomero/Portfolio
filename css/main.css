@@ -25,3 +25,16 @@ body {
 }
 
 /***************************************** MAIN ******************************************/
+
+.jumbotron {
+    text-align: center;
+}
+
+.jumbotron li {
+    background-color: #292E66;
+}
+
+.jumbotron a {
+    background-color: #292E66;
+    color: white;
+}
