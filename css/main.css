@@ -53,7 +53,7 @@ html, body {
 /***************************************** MAIN ******************************************/
 
 main {
-    height: 90%; 
+    height: 85%; 
     /* to align jumbotron vertically */
     /* because with 100% main becomes too high*/
 }
@@ -83,5 +83,17 @@ main .container { /* to align jumbotron vertically */
 
 .jumbotron a:hover {
     background-color: #D9414E;
-    color:white;
+    color: white;
 }
+
+/******************************* FOOTER *******************************************/
+
+footer .navbar {
+    margin-bottom: 0;
+}
+
+footer .navbar-nav {
+    float: none;
+    text-align: center;
+}
+
