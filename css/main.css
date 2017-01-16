@@ -24,7 +24,14 @@ html, body {
     border: none;
 }
 
-.navbar-default .navbar-brand,  .navbar-default .navbar-brand:hover {
+.navbar-default .navbar-brand {
+    color: #E5F2FF;
+    margin: 5px;
+}
+
+.navbar-default .navbar-brand:hover {
+    background-color: #D9414E;
+    border-radius: 6px;
     color: #E5F2FF;
 }
 
@@ -34,10 +41,13 @@ html, body {
 
 .navbar-nav a {
     font-weight: 600;
+    margin: 5px;
 }
 
 .navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus {
-    color: white;
+    background-color: #D9414E;
+    border-radius: 6px;
+    color: #E5F2FF;
 }
 
 /***************************************** MAIN ******************************************/
