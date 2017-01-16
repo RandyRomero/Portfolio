@@ -14,6 +14,7 @@ html, body {
     position: fixed;
     width: 100%;
     z-index: -1;
+    /* because android chrome doesn't suppord normal background-image: cover */
 }
 
 /***************************************** NAVBAR ******************************************/
@@ -31,12 +32,20 @@ html, body {
     color: #E5F2FF;
 }
 
+.navbar-nav a {
+    font-weight: 600;
+}
+
+.navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus {
+    color: white;
+}
+
 /***************************************** MAIN ******************************************/
 
 main {
     height: 90%; 
     /* to align jumbotron vertically */
-    /* because with 100% main becomes too high idk why*/
+    /* because with 100% main becomes too high*/
 }
 
 main .container {
