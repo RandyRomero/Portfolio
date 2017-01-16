@@ -3,7 +3,9 @@ html {
 }
 html, body {
     padding: 0;
+    height: 100%; /* to align jumbotron vertically */
 }
+
 
 .fixed-bg {
     background-image: url(../images/code.jpg);
@@ -30,6 +32,26 @@ html, body {
 }
 
 /***************************************** MAIN ******************************************/
+
+main {
+    height: 90%; 
+    /* to align jumbotron vertically */
+    /* because with 100% main becomes too high idk why*/
+}
+
+main .container {
+    height: 100%; /* to align jumbotron vertically */
+}
+
+main .jumbotron {
+    vertical-align: middle; /* to align jumbotron vertically */
+}
+
+main .container { /* to align jumbotron vertically */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
 
 .jumbotron {
     text-align: center;
