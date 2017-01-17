@@ -22,6 +22,7 @@ html, body {
 .navbar {
     background-color: transparent; /* #D9414E */
     border: none;
+    margin-bottom: 0;
 }
 
 .navbar-default .navbar-brand {
@@ -53,7 +54,7 @@ html, body {
 /***************************************** MAIN ******************************************/
 
 main {
-    height: 85%; 
+    height: 87%; 
     /* to align jumbotron vertically */
     /* because with 100% main becomes too high*/
 }
@@ -87,9 +88,5 @@ main .container { /* to align jumbotron vertically */
 }
 
 /******************************* FOOTER *******************************************/
-
-footer .navbar {
-    margin-bottom: 0;
-}
 
 
