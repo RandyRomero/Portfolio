@@ -6,6 +6,11 @@ html, body {
     height: 100%; /* to align jumbotron vertically */
 }
 
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
 
 .fixed-bg {
     background-image: url(../images/code.jpg);
@@ -54,7 +59,7 @@ html, body {
 /***************************************** MAIN ******************************************/
 
 main {
-    height: 87%; 
+/*    height: 87%; */
     /* to align jumbotron vertically */
     /* because with 100% main becomes too high*/
 }
@@ -90,6 +95,10 @@ main .container { /* to align jumbotron vertically */
 /******************************* FOOTER *******************************************/
 
 @media(max-width: 768px) {
+    .jumbotron {
+        margin-bottom: 0px;
+    }
+    
     footer .navbar-right {
         float: right;
     }
