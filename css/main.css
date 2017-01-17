@@ -89,4 +89,12 @@ main .container { /* to align jumbotron vertically */
 
 /******************************* FOOTER *******************************************/
 
-
+@media(max-width: 768px) {
+    footer .navbar-right {
+        float: right;
+    }
+    
+    footer .nav>li {
+        float: left; /* footer li in one line for small screens as well as for all other screens */
+    }
+}
