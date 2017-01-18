@@ -1,0 +1,140 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px; 
+	padding: 0 10px; 
+}
+
+/* Header */
+.header {
+  height: 800px;
+  text-align: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  /* 144% important attribute  to scale bckgnd image!! */
+}
+
+.header .container {
+	position: relative;
+	top: 200px;
+  color: #fff;
+}
+
+.header h1 {
+	font-size: 80px;
+	line-height: 100px; 
+	margin-top: 0;
+	margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+@media (min-width:850px) {
+	.header h1 {
+		font-size: 120px;
+	}
+}
+
+.header p {
+	font-weight: 500;
+	letter-spacing: 8px;
+	margin-bottom: 40px;
+	margin-top: 0;
+  text-transform: uppercase;
+}
+.btn {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  background: black;
+  -webkit-transition: background .5s;
+    /* allows you to change property values smoothly (from one value to another), over a given duration. */
+}
+
+.btn:hover {
+	background: #117bff;
+	cursor: pointer; /* what will be cursor looks like above this element */ 
+}
+
+
+/* Nav */
+
+.nav {
+  background: black;
+}
+.nav ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0px 0px; /* only works for UL, not for LI tag */
+	text-align: left;
+}
+
+.nav ul li {
+  display: inline-block;
+  color: #fff;
+  padding: 30px 15px;
+  /* padding-right: 15px; /* offset between items of list */
+}
+
+/* Main */
+.main .container {
+	margin: 80px auto;
+}
+
+.main .container img {
+  float: left;
+  /* that's for image to be left from the text */
+  width: 220px;
+  margin: 20px 50px;
+  margin-left: 0px;
+  /* in order to be not so close to text */
+}
+
+/* Jumbotron */
+.jumbotron {
+	height: 600px; 
+	text-align: right;
+  color: white;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron .container {
+	position: relative;
+	top: 220px;
+}
+
+
+/* Footer */
+.footer { 
+	font-size: 14px;
+  background: black;
+  color: white;
+  padding: 15px 0px;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
