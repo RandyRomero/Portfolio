@@ -68,12 +68,12 @@ body {
     color: white;
 }
 
-.jumbotron a:hover {
+.jumbotron a:hover, .jumbotron a:focus {
     background-color: #D9414E;
     color: white;
 }
 
-/******************************* FOOTER *******************************************/
+/******************************* MEDIA QUERIES *******************************************/
 
 @media(max-width: 768px) {
     .jumbotron {
