@@ -6,9 +6,17 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     border-top: none;
+    /* to get rid of line between navbar and dropdon menu */
 }
 
 .navbar-nav {
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 0; 
+    /* to decrease gup between navbar and dropdown menu */
+}
+
+.navbar-toggle {
+    margin-bottom: 4px;
+    margin-top: 12px;
+    /* to make button in one line with logo */
 }
