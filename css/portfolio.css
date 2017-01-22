@@ -21,9 +21,19 @@
     /* to make button in one line with logo */
 }
 
-/********************** MAIN ***************************/
+/*************************** MAIN ***************************/
 
 main .container {
     margin-top: 15px;
     /* make space between navbar and main */
+}
+
+
+/********************** MEDIA QUERIES ***************************/
+
+@media(min-width: 768px) {
+    .navbar>.container .navbar-brand {
+        margin-left: 0;
+        /* reset bootstrap -15px for margin-left because it goes out of container */
+    }
 }
