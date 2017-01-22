@@ -151,7 +151,7 @@ footer p:nth-child(3) {
 
 /********** MEDIA QUERIES **********/
 
-@media (max-width: 680px) /* was 680 */ {
+@media (max-width: 768px) /* was 680 */ {
   div.col-md-4.headerone {
       margin-left: 20px;
       height: 100px;
