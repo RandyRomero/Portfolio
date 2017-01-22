@@ -1,32 +1,36 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arvo', serif;
-  font-size: 16px;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
 }
 
 .container {
-  max-width: 940px;
-  margin: 0 auto;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
-/********** HEADER *********/ 
+
+/********** HEADER *********/
 
 div.col-md-4.headerone {
-   /* width: 240px;*/
+    /* width: 240px;*/
     height: 144px;
 }
 
 header h1 {
-  margin: 0 auto;
-  padding: 52.5px 0;
-  /* margin: 25% auto; */
-  /* adjusting height of header */
+    margin: 0 auto;
+    padding: 52.5px 0;
+    /* margin: 25% auto; */
+    /* adjusting height of header */
 }
+
 
 /*********** NAVBAR ***********/
 
-ul.nav.nav-pills { /* it's only works like this*/
+ul.nav.nav-pills {
+    /* it's only works like this*/
     width: 300px;
     /* ! fixed width necessery for list items not to drop to the next line ! */
     text-align: center;
@@ -37,161 +41,164 @@ ul.nav.nav-pills { /* it's only works like this*/
 
 ul.nav-pills > li {
     float: none;
-    display: inline-block; /* li in one line */ 
+    display: inline-block;
+    /* li in one line */
 }
 
 .nav-pills li a {
-  color: #d8192f;
-  margin: 40px auto; /* adjusting height of header */
+    color: #d8192f;
+    margin: 40px auto;
+    /* adjusting height of header */
 }
-
 
 .nav-pills li.active a,
 .nav-pills li a:hover,
 .section .btn:hover {
-  background-color:rgba(216,25,47,1);
-  box-shadow:0 2px 4px rgba(0,0,0,.5); 
-  color:#fff;
+    background-color: rgba(216, 25, 47, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    color: #fff;
 }
 
 
 /*********** JUMBOTRON ***********/
 
 .jumbotron {
-  height: 500px;
-  background: url(https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg);
-  background-size: cover;
-  background-position: center;
+    height: 500px;
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.jumbotron h2:first-child { /* easy way to reach text in the middle of food picture */
-  margin-top: 100px;
+.jumbotron h2:first-child {
+    /* easy way to reach text in the middle of food picture */
+    margin-top: 100px;
 }
 
 .jumbotron h2 {
-  color: white; 
-  font-size: 60px;
-  text-align: right;
-  margin: 0;
+    color: white;
+    font-size: 60px;
+    text-align: right;
+    margin: 0;
 }
+
 
 /********* BANNER *********/
 
-
-.banner, .supporting {
-  text-align: center;
-  padding-top: 40px;
+.banner,
+.supporting {
+    text-align: center;
+    padding-top: 40px;
 }
 
 .banner {
-  background-color:#36343f;
-  height:180px; 
-  color: #fff;
+    background-color: #36343f;
+    height: 180px;
+    color: #fff;
 }
 
 .section.banner h3 {
-  margin-top: 0px;
-  margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .section.banner .btn-lg.btn-default {
-  background: rgba(216,25,47,.5);
-  color: white;
-  margin-top: 15px;
+    background: rgba(216, 25, 47, .5);
+    color: white;
+    margin-top: 15px;
 }
 
 .section.banner .btn-lg.btn-default:hover {
-  text-decoration: none;
-  background: #CB213D;
+    text-decoration: none;
+    background: #CB213D;
 }
+
 
 /********* PAGE-HEADER ********/
 
 .page-header h3 {
-  text-align: center;
+    text-align: center;
 }
 
-.section .row .col-md-4 h4, .section .row .col-md-4 p {
-  text-align: center;
+.section .row .col-md-4 h4,
+.section .row .col-md-4 p {
+    text-align: center;
 }
 
 .section .row .col-md-4 h4 {
-  color: rgba(216,25,47,1); /*last number is opacity */
+    color: rgba(216, 25, 47, 1);
+    /*last number is opacity */
 }
 
 .section .row {
-  margin-bottom: 50px;
-} /* also for footer */
+    margin-bottom: 50px;
+}
+
+
+/* also for footer */
+
 
 /********* FOOTER *********/
- 
+
 footer {
-  background: #eeeeee;
-  text-align: center;
-  
+    background: #eeeeee;
+    text-align: center;
 }
 
 footer p {
-  float: left;
-  width: 33%; /* or you get your p's all together without aligning */
-  padding-top: 30px;
-  padding-bottom: 60px;
+    float: left;
+    width: 33%;
+    /* or you get your p's all together without aligning */
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 footer p:nth-child(2) {
-  color: rgba(216,25,47,1);
-  text-align: center;
+    color: rgba(216, 25, 47, 1);
+    text-align: center;
 }
-
-
 
 footer p:nth-child(3) {
-  text-align: right;
+    text-align: right;
 }
+
 
 /********** MEDIA QUERIES **********/
 
-@media (max-width: 767px) /* was 680 */ {
-  div.col-md-4.headerone {
-      margin-left: 20px;
-      height: 100px;
-  }
-    
+@media (max-width: 767px)
+/* was 680 */
+
+{
+    div.col-md-4.headerone {
+        margin-left: 20px;
+        height: 100px;
+    }
     header h1 {
-    text-align: center;
-    padding-top: 45px;
-    padding-bottom: 10px;
-  }
-    
-    
-  .nav {
-    float: none;
-    margin: 0 auto;
-  }
-  
-    ul.nav.nav-pills { 
-    margin: 0 auto;
-    /*width: 50%;*/
-    }    
-    
-  .banner {
-    height: 220px;
-  }
-  
-  .nav-pills li:first-child a  {
-    margin-left: 20px;
-  }
-   
-  .nav-pills li a {
-    margin-top: 0;
-    margin-bottom: 30px;
-  } 
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 10px;
+    }
+    .nav {
+        float: none;
+        margin: 0 auto;
+    }
+    ul.nav.nav-pills {
+        margin: 0 auto;
+        /*width: 50%;*/
+    }
+    .banner {
+        height: 220px;
+    }
+    .nav-pills li:first-child a {
+        margin-left: 20px;
+    }
+    .nav-pills li a {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 500px) {
-    
     /* make lines of text in footer in one line for small viewports */
-    
     footer p {
         float: none;
         margin: 0;
@@ -200,11 +207,9 @@ footer p:nth-child(3) {
         text-align: center;
         width: 100%;
     }
-    
     footer p:first-child {
         padding-top: 20px;
     }
-    
     footer p:nth-child(3) {
         padding-bottom: 20px;
         text-align: center;
