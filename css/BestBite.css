@@ -166,14 +166,18 @@ footer p:nth-child(3) {
 /********** MEDIA QUERIES **********/
 
 @media(min-height: 1192px) {
-    .jumbotron {
-        min-height: 500px;
-        height: 42%;
+    body {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
     }
     
-    .section:nth-child(4) {
-        min-height: 249px;
-        height: 20.89%;
+    .jumbotron {
+        flex-grow: 1;
+    }
+    
+    header, .section, footer {
+        flex-grow: 0;
     }
 }
 
