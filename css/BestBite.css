@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: 'Arvo', serif;
     font-size: 16px;
+    height: 100%;
 }
 
 .container {
@@ -163,6 +164,18 @@ footer p:nth-child(3) {
 
 
 /********** MEDIA QUERIES **********/
+
+@media(min-height: 1192px) {
+    .jumbotron {
+        min-height: 500px;
+        height: 42%;
+    }
+    
+    .section:nth-child(4) {
+        min-height: 249px;
+        height: 26%;
+    }
+}
 
 @media (max-width: 767px)
 /* was 680 */
