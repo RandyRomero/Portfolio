@@ -3,10 +3,6 @@ html, body {
   padding: 0;
 }
 
-body {
-	min-width: 500px;
-}
-
 .container {
 	max-width: 1000px;
 }
@@ -94,8 +90,8 @@ body {
 	/*margin-bottom: 80px; */
 }
 
-.supporting-1 img {
-	width: 450px;
+img {
+	max-width: 450px;
 	height: auto;
 }
 
@@ -103,19 +99,9 @@ body {
 	background-color: #000000;
 }
 
-.supporting-2 img {
-	width: 450px;
-	height: auto;
-}
-
 .supporting-2 .row {
 	margin-top: 70px;
 	margin-bottom: 70px;
-}
-
-.supporting-3 img {
-	width: 450px;
-	height: auto;
 }
 
 .supporting-3 .row {
