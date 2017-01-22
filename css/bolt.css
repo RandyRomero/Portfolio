@@ -233,6 +233,12 @@ body {
 }
 
 @media (max-width: 770px) {
+    .jumbotron form {
+        margin-bottom: 30px;
+        margin-top: 45px;
+        /* decrease empty spaces for small viewports */
+    }
+    
     .jumbotron .main .form-group {
         display: block;
     }
