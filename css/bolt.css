@@ -219,6 +219,19 @@ body {
     }
 }
 
+@media(min-width: 991px) {
+    .supporting .container div:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 991px) {
+    .supporting .col-md-8 .thumbnail img {
+        max-width: 313px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 770px) {
     .jumbotron .main .form-group {
         display: block;
@@ -259,15 +272,4 @@ body {
     }
 }
 
-@media(min-width: 991px) {
-    .supporting .container div:last-child {
-        margin-bottom: 40px;
-    }
-}
 
-@media(max-width: 991px) {
-    .supporting .col-md-8 .thumbnail img {
-        max-width: 313px;
-        width: 100%;
-    }
-}
