@@ -83,10 +83,6 @@ body {
     color: white;
 }
 
-.supporting-1 {
-    min-height: 470px;
-}
-
 .supporting-1,
 .supporting-3 {
     background-color: #161718;
@@ -172,6 +168,14 @@ footer a:hover {
 /*************************************** MEDIA QUERIES ******************************************/
 
 @media(max-width: 767px) {
+    .supporting-1 .row,
+    .supporting-2 .row,
+    .supporting-3 .row {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        /* because 70 is stupid for smartphones */
+    }
+    
     .col-sm-6 {
         text-align: center;
     }
