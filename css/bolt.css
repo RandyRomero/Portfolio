@@ -276,6 +276,10 @@ body {
         display: block;
         width: 100%;
     }
+    
+    .supporting h2 {
+        margin-top: 45px;
+    }
 }
 
 
