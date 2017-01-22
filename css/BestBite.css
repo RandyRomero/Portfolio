@@ -166,6 +166,8 @@ footer p:nth-child(3) {
 /********** MEDIA QUERIES **********/
 
 @media(min-height: 1192px) {
+    /* make only .jumbotron grows when height of body exceeds of total heigth of elements */
+    
     body {
         display: flex;
         flex-flow: column nowrap;
