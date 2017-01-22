@@ -1,0 +1,275 @@
+html,
+body {
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 270px;
+}
+
+.container {
+	max-width: 940px;
+}
+
+.button {
+	text-decoration: none;
+	white-space: nowrap;
+	color: #0393FF;
+	padding-top: 9px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border: 1px solid #0393FF;
+	border-radius: 2px;
+	font-weight: 500;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.button:hover {
+	color: white;
+	background-color: #0393FF;
+	text-decoration: none;
+}
+
+
+/************************ JUMBOTRON ************************/
+
+.jumbotron {
+	background-color: black;
+	margin-bottom: 0;
+}
+
+.jumbotron .container {
+	padding: 0 15px;
+}
+
+.jumbotron img {
+	width: 180px;
+	height: auto;
+	margin-left: 0;
+}
+
+.jumbotron ul {
+	margin-top: 8px;
+	/*margin-left: 16px; */
+	min-width: 230px;
+	padding-left: 30px;
+}
+
+.jumbotron ul li {
+	display: inline;
+	color: white;
+	font-size: 14px;
+}
+
+.jumbotron ul li:first-child {
+	margin-left: 10px;
+	margin-right: 30px;
+}
+
+.jumbotron .main {
+	text-align: center;
+	/* to center elements like links inside main container */
+}
+
+.jumbotron .main h1 {
+	margin-top: 90px;
+	/*margin-left: -17px; */
+	margin-bottom: 49px;
+	color: white;
+	font-weight: 300;
+	text-align: center;
+}
+
+.jumbotron form {
+	margin-top: 90px;
+	margin-bottom: 114px;
+	/* don't forget to adjust this */
+}
+
+.jumbotron .main .form-group {
+	display: inline-block;
+	/* in order to make user-input and button 'search' in one line */
+}
+
+#jumbotron_input {
+	background: black;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-bottom-width: 2px;
+	border-radius: 0;
+	width: 400px;
+	margin-top: 2px;
+	margin-left: 20px;
+}
+
+.jumbotron input:focus {
+	box-shadow: none;
+}
+
+.jumbotron input:hover {
+	border-bottom-color: #0393FF;
+}
+
+.jumbotron form > a {
+	margin-left: 20px;
+}
+
+.jumbotron input[type="text"]::-webkit-input-placeholder {
+	font-size: 18px;
+}
+
+
+/************************ SUPPORTING ************************/
+
+.supporting {
+	background-image: url(https://s3.amazonaws.com/codecademy-content/projects/bolt-network/diagmonds_@2X.png);
+	background-size: 141px 142px;
+}
+
+.supporting .container {
+	text-align: center;
+	max-width: 970px;
+}
+
+.supporting h2 {
+	color: #0393FF;
+	margin-top: 90px;
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.supporting p,
+.feature p {
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 45px;
+}
+
+.supporting .thumbnail {
+	border: none;
+	padding: 0px;
+	background-color: transparent;
+	/* turning of thick white default tumbnail-class border */
+}
+
+
+/************************ FEATURE ************************/
+
+.feature {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.feature .container h2 {
+	color: #0393FF;
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: 160px;
+}
+
+.feature .container p {
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: -5px;
+	margin-bottom: 150px;
+}
+
+
+/************************ FOOTER ************************/
+
+.footer {
+	background: black;
+}
+
+.footer .container {
+	padding-top: 77px;
+	padding-bottom: 70px;
+	max-width: 970px;
+}
+
+.footer p {
+	color: #0393FF;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.footer p:first-child {
+	font-size: 18px;
+	color: white;
+	padding-bottom: 7px;
+}
+
+
+/************************ MEDIA QUERIES ************************/
+
+@media (max-width: 992px) {
+	.col-md-3 {
+		float: left;
+		/*** in order to left logo in one line with log in sign up buttons till 770 px ***/
+	}
+}
+
+@media (max-width: 770px) {
+	.jumbotron .main .form-group {
+		display: block;
+	}
+	#jumbotron_input {
+		width: 100%;
+		margin-bottom: 30px;
+		margin-left: 0;
+	}
+	.jumbotron form > a {
+		margin-left: -2px;
+	}
+	/***************** adjusting log in and sign up buttons like in an example *********/
+	.jumbotron .pull-right {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.jumbotron ul {
+		width: 100%;
+		margin-top: 30px;
+	}
+	.jumbotron ul li {
+		display: block;
+		float: left;
+		width: 50%;
+		text-align: center;
+	}
+	.jumbotron ul li:first-child {
+		margin: 0px;
+		/*** repairing wrong appearence of log in button ***/
+		height: 41px;
+		line-height: 41px;
+	}
+	.jumbotron ul li a {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media(min-width: 991px) {
+    .supporting .container div:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 991px) {
+    .supporting .col-md-8 .thumbnail img { 
+        max-width: 313px;
+        width: 100%;
+    }
+}
+    
+        
