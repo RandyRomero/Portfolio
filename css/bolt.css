@@ -281,7 +281,10 @@ footer p:first-child {
         margin-top: 45px;
     }
     
-    
+    footer .container {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
 }
 
 
