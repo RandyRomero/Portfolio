@@ -17,7 +17,7 @@ div.col-md-4.headerone {
     height: 144px;
 }
 
-.header h1 {
+header h1 {
   margin: 0 auto;
   padding: 52.5px 0;
   /* margin: 25% auto; */
@@ -157,7 +157,7 @@ footer p:nth-child(3) {
       height: 100px;
   }
     
-    .header h1 {
+    header h1 {
     text-align: center;
     padding-top: 45px;
     padding-bottom: 10px;
