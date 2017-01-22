@@ -85,6 +85,10 @@ html, body {
 	background-color: #161718;
 }
 
+.supporting-2 {
+	background-color: #000000;
+}
+
 .supporting-1 .row, .supporting-2 .row, .supporting-3 .row {
 	margin-top: 70px;
 	margin-bottom: 70px;
@@ -93,10 +97,6 @@ html, body {
 img {
 	max-width: 450px;
 	height: auto;
-}
-
-.supporting-2 {
-	background-color: #000000;
 }
 
 .supporting-4 {
@@ -110,11 +110,6 @@ img {
 .supporting-4 h2 {
 	margin-top: 150px;
 }
-
-/*.supporting-4 img {
-	margin-bottom: 158px; 
-} */
-
 /******************************************** FOOTER ********************************************/
 
 footer {
