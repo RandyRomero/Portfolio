@@ -9,8 +9,13 @@ section {
     padding: 48px 60px;
 }
 
+section .row:first-of-type {
+    margin-bottom: 50px;
+}
+
 section .thumbnail {
     background-color: #333333;
+    margin-bottom: 0;
 }
 
 
@@ -20,4 +25,9 @@ section .thumbnail {
     section {
         padding: 30px 15px;
     }
+    
+    section .row:first-of-type {
+    margin-bottom: 15px;
+}
+
 }
