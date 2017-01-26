@@ -12,3 +12,12 @@ section {
 section .thumbnail {
     background-color: #333333;
 }
+
+
+/**************************************** MEDIA-QUERIES **********************************************/
+
+@media(max-width: 767px) {
+    section {
+        padding: 30px 15px;
+    }
+}
