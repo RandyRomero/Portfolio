@@ -9,17 +9,6 @@ section {
     padding: 48px 60px;
 }
 
-.vert-align {
-    display: table;
-}
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.inner {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+section .thumbnail {
+    background-color: #333333;
 }
