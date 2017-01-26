@@ -9,7 +9,7 @@ section {
     padding: 48px 60px;
 }
 
-section .row:first-of-type {
+section:nth-of-type(2) .row:first-of-type {
     margin-bottom: 50px;
 }
 
@@ -28,6 +28,6 @@ section .thumbnail {
     
     section .row:first-of-type {
     margin-bottom: 15px;
-}
+    }
 
 }
