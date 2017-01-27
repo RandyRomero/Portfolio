@@ -35,6 +35,10 @@ section li {
     section:first-of-type ul {
         margin-top: 15px;
     }
+    
+    section:nth-of-type(2) .col-md-6:first-of-type h3 {
+    margin-top: 0;
+    }
 }
 
 @media(max-width: 767px) {
