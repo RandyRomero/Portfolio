@@ -18,6 +18,9 @@ section .thumbnail {
     margin-bottom: 0;
 }
 
+section li {
+    margin-bottom: 10px;
+}
 
 /**************************************** MEDIA-QUERIES **********************************************/
 
