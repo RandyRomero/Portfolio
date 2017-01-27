@@ -31,12 +31,18 @@ section li {
 
 /********************************** MEDIA-QUERIES********************/
 
+@media(max-width: 991px) {
+    section:first-of-type ul {
+        margin-top: 15px;
+    }
+}
+
 @media(max-width: 767px) {
     section {
-        padding: 30px 15px;
+        padding: 20px 15px;
     }
     
-    section .row:first-of-type {
+    section:nth-of-type(2) .row:first-of-type {
     margin-bottom: 15px;
     }
 
