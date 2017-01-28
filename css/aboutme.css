@@ -6,7 +6,6 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    
 }
 
 section {
@@ -29,6 +28,9 @@ section li {
     margin-bottom: 10px;
 }
 
+section:nth-of-type(3) {
+    text-align: center;
+}
 
 section:nth-of-type(3) .thumbnail {
     border: 0;
@@ -39,35 +41,36 @@ section:nth-of-type(3) img {
     margin: 0;
 }
 
-section:nth-of-type(3) {
-    text-align: center;
-}
-
 section:nth-of-type(3) ul {
     padding-left: 111px;
     text-align: left;
 }
 
-
 section:nth-of-type(3) ul li {
     list-style: none;
 }
+
+
 /********************************** MEDIA-QUERIES********************/
 
 @media(min-width: 992px) {
     .flex-column {
-    justify-content: center;
-    height: 326px;
+        justify-content: center;
+        height: 326px;
     }
+    
 }
 
 @media(max-width: 991px) {
     section:first-of-type ul {
         margin-top: 15px;
     }
-    
     section:nth-of-type(2) .col-md-6:first-of-type h3,
     section:nth-of-type(3) .col-md-6:nth-of-type(2) h3 {
+        margin-top: 0;
+    }
+    
+    section .row:nth-of-type(2) {
         margin-top: 0;
     }
 }
@@ -76,9 +79,7 @@ section:nth-of-type(3) ul li {
     section {
         padding: 20px 15px;
     }
-    
     section:nth-of-type(2) .row:first-of-type {
-    margin-bottom: 15px;
+        margin-bottom: 15px;
     }
-
 }
