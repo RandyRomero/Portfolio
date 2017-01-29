@@ -54,13 +54,17 @@ section:nth-of-type(3) ul li {
 }
 
 section:nth-of-type(4) .row:nth-of-type(1) h3 {
-    margin-top: 0;
+    margin-top: 10px;
     /* to adjust logo and text in first row in 4th section */
 }
 
 section:nth-of-type(4) .col-md-6:nth-of-type(2) .thumbnail {
     border: none;
     padding: 0;
+}
+
+section:nth-of-type(4) .col-md-12 {
+    text-align: center;
 }
 
 /********************************** MEDIA-QUERIES********************/
@@ -81,12 +85,11 @@ section:nth-of-type(4) .col-md-6:nth-of-type(2) .thumbnail {
     section:first-of-type ul {
         margin-top: 15px;
     }
-/*
-    section:nth-of-type(2) .col-md-6:first-of-type h3,
-    section:nth-of-type(3) .col-md-6:nth-of-type(2) h3 {
-        margin-top: 0; 
+
+    section:nth-of-type(2) .col-md-6:first-of-type h3 {
+        margin-top: 10px; 
     }
-*/
+
     
     section .row:nth-of-type(2)  {
         margin-top: 0;
