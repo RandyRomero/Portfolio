@@ -26,8 +26,9 @@ section .thumbnail {
     margin-bottom: 0;
 }
 
-section li {
+section:first-of-type li {
     margin-bottom: 10px;
+    /* to add some space between list items */
 }
 
 section:nth-of-type(3) {
@@ -72,7 +73,8 @@ section:nth-of-type(4) .col-md-12 {
 @media(min-width: 992px) {
     .flex-column {
         justify-content: center;
-        height: 326px;
+        height: 256px;
+        /* to center udemy logo on div */
     }
     
     section:nth-of-type(3) .row:nth-of-type(2) h3 {
