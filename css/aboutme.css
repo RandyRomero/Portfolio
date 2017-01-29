@@ -61,6 +61,10 @@ section:nth-of-type(3) ul li {
         height: 326px;
     }
     
+    section:nth-of-type(3) .row:nth-of-type(2) h3 {
+        margin-top: 30px;
+    }
+     
 }
 
 @media(max-width: 991px) {
