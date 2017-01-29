@@ -56,7 +56,6 @@ html, body {
 
 .navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus {
     background-color: #D9414E;
-   
     color: #E5F2FF;
 }
 
@@ -69,6 +68,7 @@ html, body {
 .jumbotron a {
     background-color: #333333; /* #292E66; */
     color: white;
+    -webkit-transition: background .8s;
 }
 
 .jumbotron a:hover, .jumbotron a:focus {
