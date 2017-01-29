@@ -58,7 +58,7 @@ section:nth-of-type(4) .row:nth-of-type(1) h3 {
     /* to adjust logo and text in first row in 4th section */
 }
 
-section:nth-of-type(4) .thumbnail {
+section:nth-of-type(4) .col-md-6:nth-of-type(2) .thumbnail {
     border: none;
     padding: 0;
 }
