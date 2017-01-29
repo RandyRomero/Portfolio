@@ -32,18 +32,21 @@ html, body {
 }
 
 .navbar-default .navbar-brand {
+    border-radius: 6px;
     color: #E5F2FF;
     margin: 5px;
+    -webkit-transition: background .8s;
 }
 
 .navbar-default .navbar-brand:hover {
     background-color: #D9414E;
-    border-radius: 6px;
     color: #E5F2FF;
 }
 
 .navbar-default .navbar-nav>li>a {
+     border-radius: 6px;
     color: #E5F2FF;
+    -webkit-transition: background .8s;
 }
 
 .navbar-nav a {
@@ -53,7 +56,7 @@ html, body {
 
 .navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus {
     background-color: #D9414E;
-    border-radius: 6px;
+   
     color: #E5F2FF;
 }
 
