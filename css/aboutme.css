@@ -68,6 +68,10 @@ section:nth-of-type(4) .col-md-12 {
     text-align: center;
 }
 
+section:last-of-type {
+    margin-bottom: 20px;
+}
+
 /********************************** MEDIA-QUERIES********************/
 
 @media(min-width: 992px) {
