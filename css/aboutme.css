@@ -46,8 +46,8 @@ section:nth-of-type(3) img {
 }
 
 section:nth-of-type(3) ul {
-    padding-left: 111px;
-    text-align: left;
+    padding-left: 0;
+    text-align: center;
 }
 
 section:nth-of-type(3) ul li {
