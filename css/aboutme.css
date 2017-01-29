@@ -35,7 +35,8 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) .thumbnail {
-    border: 0;
+    /* there is no need to make wrap logo in border */
+    border: none;
     padding: 0;
 }
 
@@ -52,6 +53,15 @@ section:nth-of-type(3) ul li {
     list-style: none;
 }
 
+section:nth-of-type(4) .row:nth-of-type(1) h3 {
+    margin-top: 0;
+    /* to adjust logo and text in first row in 4th section */
+}
+
+section:nth-of-type(4) .thumbnail {
+    border: none;
+    padding: 0;
+}
 
 /********************************** MEDIA-QUERIES********************/
 
@@ -64,6 +74,8 @@ section:nth-of-type(3) ul li {
     section:nth-of-type(3) .row:nth-of-type(2) h3 {
         margin-top: 30px;
     }
+    
+
      
 }
 
