@@ -49,6 +49,10 @@ html, body {
     -webkit-transition: background .8s;
 }
 
+.navbar-nav {
+    margin: 0;
+}
+
 .navbar-nav a {
     font-weight: 600;
     margin: 5px;
