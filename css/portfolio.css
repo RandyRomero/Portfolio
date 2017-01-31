@@ -28,6 +28,10 @@ main .container {
     /* make space between navbar and main */
 }
 
+.col-md-12:nth-of-type(2) .thumbnail {
+    background-color: #333333;
+}
+
 
 /********************** MEDIA QUERIES ***************************/
 
