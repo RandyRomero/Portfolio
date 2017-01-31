@@ -49,10 +49,6 @@ html, body {
     -webkit-transition: background .8s;
 }
 
-.navbar-nav {
-    margin: 0;
-}
-
 .navbar-nav a {
     font-weight: 600;
     margin: 5px;
@@ -81,6 +77,12 @@ html, body {
 }
 
 /******************************* FOOTER *******************************************/
+
+footer .navbar-nav {
+    margin: 0;
+    /* overwrite bs rule because it leads to vertical scrolling */
+}
+
 
 footer .navbar-right {
     margin-right: 0;
