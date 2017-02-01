@@ -1,9 +1,11 @@
 html {
     margin: 0;
+    
 }
 html, body {
     padding: 0;
     height: 100%; /* to align jumbotron vertically */
+    font-family: 'Kadwa', sans-serif;
 }
 
 .flex-column {
