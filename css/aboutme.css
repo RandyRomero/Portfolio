@@ -15,20 +15,31 @@ section {
     padding: 48px 60px;
 }
 
-section .row:nth-of-type(2),
-section .row:nth-of-type(3)
-{
-    margin-top: 50px;
-}
+
 
 section .thumbnail {
+    border: none;
     background-color: #333333;
     margin-bottom: 0;
+    -webkit-transition: 0.8s;
+}
+
+section a.thumbnail.active, 
+section a.thumbnail:focus, 
+section a.thumbnail:hover {
+    background-color: white;
+    border: none;
+    text-decoration: underline;
 }
 
 section:first-of-type li {
     margin-bottom: 10px;
     /* to add some space between list items */
+}
+
+section .row:nth-of-type(2),
+section .row:nth-of-type(3) {
+    margin-top: 50px;
 }
 
 section:nth-of-type(3) {
