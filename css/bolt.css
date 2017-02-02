@@ -225,8 +225,8 @@ footer p:first-child {
     }
 }
 
-@media(max-width: 991px) {
-    .supporting .col-md-8 .thumbnail img {
+@media(max-width: 767px) {
+    .supporting .col-sm-8 .thumbnail img {
         max-width: 313px;
         width: 100%;
     }
