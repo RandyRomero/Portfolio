@@ -28,6 +28,19 @@ main .container {
     /* make space between navbar and main */
 }
 
+.thumbnail {
+    border: 3px solid #ddd;
+    -webkit-transition: 0.8s;
+    /* nice border instead of default for preview */
+}
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+    border-color: #D9414E;
+    /* nice border instead of default for preview */
+}
+
+
+
 .col-md-12:nth-of-type(2) .thumbnail {
     background-color: #333333;
 }
