@@ -84,8 +84,23 @@ html, body {
 
 /******************************* FOOTER *******************************************/
 
-footer .navbar-nav {
-    float: left;
+footer .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer .container:after,
+footer .container:before {
+    content: none;
+}
+
+footer .container div {
+    order: 1;
+}
+
+footer .container ul {
+    order: 2;
 }
 
 footer .navbar-nav p {
@@ -111,6 +126,27 @@ footer .navbar-right {
     
     footer .nav>li {
         float: left; /* footer li in one line for small screens as well as for all other screens */
+    }
+}
+
+@media(max-width: 400px) {
+    footer .container {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    
+    footer .container div {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+    }
+    
+    footer .container ul {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        order: 1;
     }
 }
 
