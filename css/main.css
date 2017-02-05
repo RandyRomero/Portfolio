@@ -84,14 +84,33 @@ html, body {
 
 /******************************* FOOTER *******************************************/
 
-footer .navbar-nav {
-    margin: 0;
-    /* overwrite bs rule because it leads to vertical scrolling */
+footer .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
+footer .container:after,
+footer .container:before {
+    content: none;
+}
+
+footer .container div {
+    order: 1;
+}
+
+footer .container ul {
+    order: 2;
+}
+
+footer .navbar-nav p {
+    color: #E5F2FF;
+    padding: 15px;
+    margin: 5px;
+}
 
 footer .navbar-right {
-    margin-right: 0;
+    margin: 0;
 }
 
 /******************************* MEDIA QUERIES *******************************************/
@@ -101,8 +120,10 @@ footer .navbar-right {
         margin-bottom: 0px;
     }
     
-    footer .navbar-right {
-        float: right;
+    footer .navbar-nav p {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        /* to align with ul li */
     }
     
     footer .nav>li {
@@ -110,10 +131,47 @@ footer .navbar-right {
     }
 }
 
-@media(max-width: 340px) {
+@media(max-width: 400px) {
+    footer .container {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        /* change direction of footers' elements from horizontal to vertical */
+    }
+    
+    footer .container div {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+        /* change order of element to show it under other; to put item in the centre */
+    }
+    
+    footer .container ul {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        order: 1;
+        /* change order of element to show it under other; to put item in the centre */
+    }
+    
+    footer .container p {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+        /* get rid of superfluous empty space when footer contant of footer lays vertically */
+    }
+    
+    footer .nav>li>a {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        /* get rid of superfluous empty space when footer contant of footer lays vertically */
+    }
+}
+
+@media(max-width: 347px) {
     footer .nav>li>a {
         padding-left: 5px;
         padding-right: 5px;
-        
+   /* decrease padding for small vp */
     }
 }

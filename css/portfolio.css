@@ -9,7 +9,7 @@
     /* to get rid of line between navbar and dropdon menu */
 }
 
-.navbar-nav {
+nav .navbar-nav {
     margin-bottom: 0;
     margin-top: 0; 
     /* to decrease gup between navbar and dropdown menu */
@@ -38,8 +38,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     border-color: #D9414E;
     /* nice border instead of default for preview */
 }
-
-
 
 .col-md-12:nth-of-type(2) .thumbnail {
     background-color: #333333;
