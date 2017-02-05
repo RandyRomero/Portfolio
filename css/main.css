@@ -124,6 +124,11 @@ footer .navbar-right {
         float: right;
     }
     
+    footer .navbar-nav p {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
     footer .nav>li {
         float: left; /* footer li in one line for small screens as well as for all other screens */
     }
