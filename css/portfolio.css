@@ -52,3 +52,10 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
         /* reset bootstrap -15px for margin-left because it goes out of container */
     }
 }
+
+@media(max-width: 768px) {
+    /* to reset display: flex, which breaks hamburge-menu */;
+    .flex-column {
+        display: block;
+    }
+}
