@@ -1,0 +1,80 @@
+html { font-size: 10px; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url('../david-marcu-114194.jpg');
+    background-size: cover;
+    display: flex;
+    /* because without flex somehow align of main breaks */
+}
+
+main {
+    display: inline-block;
+    height: 40%;
+    text-align: center; /* To align not only h1, but button also*/
+    margin: 25vw auto 0 auto;
+    width: 60%;
+}
+
+main h1 {
+    color: white;
+    font-family: "Georgia", serif;
+    font-size: 6rem;
+    margin: 0;
+}
+
+main button {
+    background-color: transparent;
+    color: white;
+    display: block;
+    font-family: "Georgia", serif;
+    font-size: 2rem;
+    height: 40px;
+    margin: 0 auto;
+    width: auto;
+}
+
+main button:focus {
+    outline-color: #AB892D;
+}
+
+h3 {
+    color: white;
+    font-family: "Georgia", serif;
+}
+
+form {
+    display: none;
+}
+
+#submit {
+    display: none;
+    margin-top: 20px;
+}
+
+/*************************** MEDIA-QUERIES ****************************/
+
+@media(orientation: landscape) {
+    main {
+        margin: 25vw auto 0 auto;
+    }
+}
+
+/*@media(orientation: portrait) {*/
+    /*main {*/
+        /*margin: 10rem auto;*/
+    /*}*/
+/*}*/
+
+@media(max-width: 760px) {
+
+    main h1 {
+        font-size: 3rem;
+    }
+}
