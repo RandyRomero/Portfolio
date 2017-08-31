@@ -8,9 +8,8 @@ html, body {
 }
 
 body {
-    background-image: url('../images/david-marcu-114194.jpg');
+    background: url('../images/david-marcu-114194.jpg') no-repeat fixed center;
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
