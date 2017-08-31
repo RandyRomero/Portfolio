@@ -8,17 +8,19 @@ html, body {
 }
 
 body {
-    background-image: url('../david-marcu-114194.jpg');
+    background-image: url('../images/david-marcu-114194.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    /* because without flex somehow align of main breaks */
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 main {
     display: inline-block;
     height: 40%;
     text-align: center; /* To align not only h1, but button also*/
-    margin: 25vw auto 0 auto;
+    margin: 0 auto;
     width: 60%;
 }
 
@@ -44,9 +46,11 @@ main button:focus {
     outline-color: #AB892D;
 }
 
-h3 {
+main h3 {
     color: white;
     font-family: "Georgia", serif;
+    font-size: 2.5rem;
+    margin: 0.75rem;
 }
 
 form {
@@ -60,21 +64,51 @@ form {
 
 /*************************** MEDIA-QUERIES ****************************/
 
-@media(orientation: landscape) {
-    main {
-        margin: 25vw auto 0 auto;
-    }
-}
-
-/*@media(orientation: portrait) {*/
+/*@media(orientation: landscape) {*/
     /*main {*/
-        /*margin: 10rem auto;*/
+        /*margin: 25vw auto 0 auto;*/
     /*}*/
 /*}*/
 
 @media(max-width: 760px) {
+    main {
+        width: 80%;
+    }
 
     main h1 {
         font-size: 3rem;
     }
+
+    main h3 {
+        font-size: 1.7rem;
+    }
+
+    main button {
+        font-size: 1.7rem;
+    }
+    #submit {
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 480px) and (orientation: landscape) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 400px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h3 {
+        font-size: 1.4rem;
+    }
+
 }
