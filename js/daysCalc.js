@@ -1,10 +1,11 @@
 const tellMe = document.querySelector('main button');
+const heading = document.querySelector('main h1');
 const submitButton = document.querySelector('#submit');
 const selectDay = document.querySelector('#day');
 const selectMonth = document.querySelector('#month');
 const selectYear = document.querySelector('#year');
 const form = document.querySelector('form');
-const output = document.querySelector('#output');
+// const output = document.querySelector('#output');
 let userDate = [null, null, null]; // [date, month, year]
 
 function evaluateDays() {
@@ -14,9 +15,9 @@ function evaluateDays() {
     let birthday = new Date(now);
     let days = Math.floor((new Date() - birthday) / (24 * 60 * 60 * 1000));
     if (days < 0) {
-        output.textContent = 'You have not born yet.';
+        heading.textContent = 'You have not born yet.';
     } else {
-        output.textContent = 'You were born ' + days + ' days ago.';
+        heading.textContent = 'You were born ' + days + ' days ago.';
     }
 }
 
@@ -49,7 +50,7 @@ submitButton.addEventListener('click', () => {
     });
 
     if (!validDate) {
-        output.textContent = 'Choose day, month and year of your birthday first.';
+        heading.textContent = 'Choose day, month and year of your birthday first.';
         return -1
     }
     evaluateDays();
