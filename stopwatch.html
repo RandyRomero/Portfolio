@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stopwatch</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='css/stopwatch.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+    <main>
+        <h1>00:00:00</h1>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </main>
+    <script>
+        var clockOnPage = document.querySelector('h1');
+        var start = document.querySelector('#start');
+        var pause = document.querySelector('#pause');
+        var reset = document.querySelector('#reset');
+        var zero = new Date().setHours(0, 0, 0, 0);
+        var time = zero;
+        var start_watch;
+        var actual_time = new Date();
+        var paused_time;
+        var watch_on = false;
+
+        function updateTime() {
+            time += 10;
+            actual_time = new Date(time);
+            console.log(actual_time.getHours() + ':' + actual_time.getMinutes() + ':' + actual_time.getSeconds() +
+            ':' + actual_time.getMilliseconds());
+        }
+
+        start.addEventListener('click', function() {
+            if (!watch_on) {
+                start_watch = setInterval(updateTime, 10);
+                watch_on = true;
+                }
+        });
+
+        pause.addEventListener('click', function() {
+            watch_on = false;
+        });
+        reset.addEventListener('click', function() {
+            clearInterval(start_watch);
+            watch_on = false;
+            time = zero;
+            actual_time = new Date(time);
+            console.log(actual_time.getHours() + ':' + actual_time.getMinutes() + ':' + actual_time.getSeconds());
+        });
+
+    </script>
+</body>
+</html>
