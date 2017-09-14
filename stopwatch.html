@@ -14,7 +14,7 @@
         <button id="reset">Reset</button>
     </main>
     <script>
-        var clockOnPage = document.querySelector('h1');
+        var clock_on_page = document.querySelector('h1');
         var start = document.querySelector('#start');
         var pause = document.querySelector('#pause');
         var reset = document.querySelector('#reset');
@@ -22,7 +22,6 @@
         var time = zero;
         var start_watch;
         var actual_time = new Date();
-        var paused_time;
         var watch_on = false;
 
         function time_formatter(number) {
@@ -33,8 +32,8 @@
         }
 
         function print_time() {
-            console.log(time_formatter(actual_time.getHours()) + ':' + time_formatter(actual_time.getMinutes()) +
-                ':' + time_formatter(actual_time.getSeconds()) + ':' + actual_time.getMilliseconds());
+            clock_on_page.textContent = (time_formatter(actual_time.getHours()) + ':'
+                + time_formatter(actual_time.getMinutes()) + ':' + time_formatter(actual_time.getSeconds()));
         }
 
         function update_time() {
