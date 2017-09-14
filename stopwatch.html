@@ -25,16 +25,27 @@
         var paused_time;
         var watch_on = false;
 
-        function updateTime() {
+        function time_formatter(number) {
+            if (number < 10) {
+                return '0' + number;
+            }
+            return number;
+        }
+
+        function print_time() {
+            console.log(time_formatter(actual_time.getHours()) + ':' + time_formatter(actual_time.getMinutes()) +
+                ':' + time_formatter(actual_time.getSeconds()) + ':' + actual_time.getMilliseconds());
+        }
+
+        function update_time() {
             time += 10;
             actual_time = new Date(time);
-            console.log(actual_time.getHours() + ':' + actual_time.getMinutes() + ':' + actual_time.getSeconds() +
-            ':' + actual_time.getMilliseconds());
+            print_time();
         }
 
         start.addEventListener('click', function() {
             if (!watch_on) {
-                start_watch = setInterval(updateTime, 10);
+                start_watch = setInterval(update_time, 10);
                 watch_on = true;
                 }
         });
@@ -48,7 +59,7 @@
             watch_on = false;
             time = zero;
             actual_time = new Date(time);
-            console.log(actual_time.getHours() + ':' + actual_time.getMinutes() + ':' + actual_time.getSeconds());
+            print_time();
         });
 
     </script>
