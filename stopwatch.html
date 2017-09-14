@@ -40,6 +40,7 @@
         });
 
         pause.addEventListener('click', function() {
+            clearInterval(start_watch);
             watch_on = false;
         });
         reset.addEventListener('click', function() {
