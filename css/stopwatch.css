@@ -1,3 +1,7 @@
+html {
+    font-size: 10px;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,4 +13,32 @@ body {
 
 h1 {
     color: white;
+    font-size: 20rem;
+    margin: 0;
+}
+
+button, h1 {
+    font-family: 'Inconsolata', monospace;
+}
+
+button {
+    background-color: black;
+    border-style: solid; /* reset default inset border of button */
+    color: white;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+button:focus {
+    outline: none; /* reset default blu outline */
+}
+
+button:hover {
+    border-style: dashed;
 }
