@@ -22,9 +22,10 @@
         var time = zero;
         var start_watch;
         var actual_time = new Date();
-        var watch_on = false;
+        var watch_on = false; /* to prevent stating another instance of setInterval */
 
         function time_formatter(number) {
+            /* add leading zero if necessary */
             if (number < 10) {
                 return '0' + number;
             }
@@ -32,34 +33,42 @@
         }
 
         function print_time() {
+            /* update time on page */
             clock_on_page.textContent = (time_formatter(actual_time.getHours()) + ':'
                 + time_formatter(actual_time.getMinutes()) + ':' + time_formatter(actual_time.getSeconds()));
         }
 
         function update_time() {
+            /* counter of stopwatch */
             time += 10;
             actual_time = new Date(time);
             print_time();
         }
 
-        start.addEventListener('click', function() {
+        function start_stopwatch() {
+            /* start stopwatch only if it is switched off */
             if (!watch_on) {
                 start_watch = setInterval(update_time, 10);
                 watch_on = true;
-                }
-        });
+            }
+        }
 
-        pause.addEventListener('click', function() {
+        function pause_stopwatch() {
             clearInterval(start_watch);
             watch_on = false;
-        });
-        reset.addEventListener('click', function() {
+        }
+
+        function reset_stopwatch() {
             clearInterval(start_watch);
             watch_on = false;
             time = zero;
             actual_time = new Date(time);
             print_time();
-        });
+        }
+
+        start.addEventListener('click', start_stopwatch);
+        pause.addEventListener('click', pause_stopwatch);
+        reset.addEventListener('click', reset_stopwatch);
 
     </script>
 </body>
