@@ -8,7 +8,27 @@ html, body {
 }
 
 body {
+    align-items: center;
     background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+main div:first-of-type {
+    text-align: center;
+}
+
+main div:nth-of-type(2) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 h1 {

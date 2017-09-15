@@ -10,6 +10,8 @@ let watch_on = false; /* to prevent stating another instance of setInterval */
 let colors_button = document.querySelector('#colors');
 let body = document.querySelector('body');
 let buttons = document.querySelectorAll('button');
+let one_color;
+let opposite_color;
 
 function time_formatter(number) {
     /* add leading zero if necessary */
@@ -58,15 +60,42 @@ function random_hex_number() {
     return '#' + (Math.floor(Math.random() * 16777215 + 1)).toString(16);
 }
 
-function change_color() {
-    let one_color = random_hex_number();
-    let opposite_color = random_hex_number();
+function invert_colors(btn) {
+    /* invert buttons in active state (only when mouse pointer is pressed down on specific button */
+    /* it's like css rule for button:active */
+    buttons[btn].style.borderColor = one_color;
+    buttons[btn].style.color = one_color;
+    buttons[btn].style.backgroundColor = opposite_color;
+}
+
+function get_colors_back(btn) {
+    /* return colors back when button is not active anymore */
+    buttons[btn].style.borderColor = opposite_color;
+    buttons[btn].style.color = opposite_color;
+    buttons[btn].style.backgroundColor = one_color;
+}
+
+function change_color() { /* change colors of whole page */
+    /* get two random colors */
+    one_color = random_hex_number();
+    opposite_color = random_hex_number();
+    /* apply them to background of body and to stopwatch numbers */
     body.style.backgroundColor = one_color;
     clock_on_page.style.color = opposite_color;
-    document.styleSheets[1].insertRule('button:active { background-color: ' + opposite_color + '}');
+    /* apply color to buttons */
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].style.borderColor = opposite_color;
         buttons[i].style.color = opposite_color;
+        buttons[i].style.backgroundColor = one_color;
+    }
+
+    for (let i = 0; i < buttons.length; i++) {
+        /* invert colors of buttons when button is pressed */
+        buttons[i].addEventListener('mousedown', invert_colors.bind(null, i));
+        /* get colors back when button is not pressed anymore */
+        buttons[i].addEventListener('mouseup', get_colors_back.bind(null, i));
+        /* get colors back even if mouse leave the button otherwise it will stay with inversed colors */
+        buttons[i].addEventListener('mouseleave', get_colors_back.bind(null, i));
     }
 }
 
