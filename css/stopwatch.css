@@ -22,7 +22,7 @@ button, h1 {
 }
 
 button {
-    background-color: black;
+    background-color: transparent;
     border-style: solid; /* reset default inset border of button */
     color: white;
     font-size: 5rem;
