@@ -1,29 +1,28 @@
-html {
-    font-size: 10px;
-}
+html {  font-size: 10px;  }
 
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    align-items: center;
+
     background-color: black;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 main {
-    display: block;
-    margin: 0 auto;
-    width: 60%;
+    /*align-self: flex-end;*/
+    /*display: block;*/
+    /*margin: 0 auto;*/
+    /*width: 60%;*/
 }
 
-main div:first-of-type {
-    text-align: center;
-}
+main div:first-of-type {  text-align: center;  }
 
 main div:nth-of-type(2) {
     display: flex;
@@ -33,19 +32,17 @@ main div:nth-of-type(2) {
 
 h1 {
     color: white;
-    font-size: 20rem;
+    font-size: 16vw;
     margin: 0;
 }
 
-button, h1 {
-    font-family: 'Inconsolata', monospace;
-}
+button, h1 {  font-family: 'Inconsolata', monospace;  }
 
 button {
     background-color: transparent;
     border-style: solid; /* reset default inset border of button */
     color: white;
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: 900;
 }
 
@@ -55,10 +52,16 @@ button:active {
     border-color: black;
 }
 
-button:focus {
-    outline: none; /* reset default blu outline */
+button:focus {  outline: none; /* reset default blu outline */  }
+
+button:hover {  border-style: dashed;  }
+
+@media(orientation: landscape) {
+    h1 {  font-size: 20vw;  }
+    button {  font-size: 5vw;  }
 }
 
-button:hover {
-    border-style: dashed;
+@media(orientation: portrait) {
+    h1 {  font-size: 21vw;  }
+    button {  font-size: 5vw;  }
 }
