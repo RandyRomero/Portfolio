@@ -29,6 +29,9 @@ function print_time() {
 
 function update_time() {
     /* counter of stopwatch */
+    if (document.hidden) {
+        time += 1000; /* if tab is inactive and minimum interval is 1000 */
+    }
     time += 10;
     actual_time = new Date(time);
     print_time();
